@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../CSS/mediaqueries.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
+     <nav id="desktop-nav">
       <a href="index.html" class="logo">Amin Louati</a>
       <div>
         <ul class="nav-links">
@@ -21,49 +21,82 @@
       </div>
     </nav>
     
-   
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
           <img
-            src="../IMG/about-pic.jpg"
-            alt="Profile picture"
-            class="about-pic"
+            src="../IMG/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
           />
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
         </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="../IMG/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience - CITIPLAST</h3>
-              <p>June 2022 - September 2022 <br />Technician</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="../IMG/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p> - Mathematics Baccalaureate<br />- National License in Automation and Industrial Computing</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              A proactive and diligent engineering graduate with a national license in automation and industrial computing. With a foundational education in mathematics and hands-on experience as a technician, I have developed strong problem-solving skills and a keen interest in interface design. I recently completed an internship where I designed and implemented a human-machine interface to manage production indicators and test benches. I am proficient in the Office pack, including Word, Power Paint, Excel, and have a good command of programming tools like NILabview, Matlab, and VHDL. Fluent in Arabic, French, and English, I am ready to contribute effectively in diverse team environments.
-            </p>
-          </div>
+        <div class="contact-info-container">
+          <img
+            src="../IMG/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
         </div>
       </div>
-     
     </section>
+      <section id="contact">
+  <div class="contact-info-upper-container">
+ <div class="contact-info-container">
+    <form id="registrationForm" novalidate>
+  
+    <legend>Registration</legend>
     
+    <label for="last_name">Last Name *</label>
+    <input type="text" id="last_name" name="last_name" required>
+    <span id="lastNameError" class="error"></span><br><br>
+    
+    <label for="first_name">First Name</label>
+    <input type="text" id="first_name" name="first_name">
+    <span id="firstNameError" class="error"></span><br><br>
+    
+    <label for="address">Address</label>
+    <textarea id="address" name="address"></textarea><br><br>
+    
+    <label for="phone">Phone Number *</label>
+    <input type="tel" id="phone" name="phone" required>
+    <span id="phoneError" class="error"></span><br><br>
+    
+    <label for="birthdate">Birth Date</label>
+    <input type="date" id="birthdate" name="birthdate"><br><br>
+    
+    <label for="email">Email *</label>
+    <input type="email" id="email" name="email" placeholder="test@gmail.com" required>
+    <span id="emailError" class="error"></span><br><br>
+    
+    <label for="password">Password *</label>
+    <input type="password" id="password" name="password" required>
+    <span id="passwordError" class="error"></span><br><br>
+    
+    <label for="confirm_password">Confirm Password *</label>
+    <input type="password" id="confirm_password" name="confirm_password" required>
+    <span id="confirmPasswordError" class="error"></span><br><br>
+    
+    <button type="submit"
+            class="btn btn-color-2 project-btn"
+            onclick="return passValidation();">
+        Submit
+    </button>
+    <button type="reset"
+            class="btn btn-color-2 project-btn">
+        Reset
+    </button>
+
+</form>
+
+    
+    
+      </div>
+    </div>
+</section>
     <footer>
       
       <p>Copyright &#169; 2023-2024 Amin Louati. All Rights Reserved.</p>
